@@ -26,6 +26,17 @@
         .font-manrope {
             font-family: "Manrope", sans-serif;
         }
+
+        .title-text {
+            color: #212121;
+        }
+
+        .body-text {
+            color: #494949;
+        }
+        .about-bg {
+            background-image: url("./assets/Rectangle.png");
+        }
     </style>
 
 
@@ -58,7 +69,7 @@
 
             <div class=" navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
-                    <li class="text-[#494949] font-extrabold">
+                    <li class="body-text font-extrabold">
                         <a href="#home">Home</a>
                     </li>
                     <li class="text-[#737373]">
@@ -95,7 +106,7 @@
 
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li class="text-[#494949] font-extrabold">
+                        <li class="body-text font-extrabold">
                             <a href="#home">Home</a>
                         </li>
                         <li class="text-[#737373]">
@@ -166,8 +177,10 @@
 
         <section id="home" class="w-5/6 mx-auto text-center flex flex-col justify-center items-center mt-10">
             <img src="./assets/banner.png" alt="max-w-full h-auto">
-            <h1 class="mt-6 text-3xl lg:text-6xl font-extrabold">A barn house of this design has a striking appearance</h1>
-            <p class="mt-6 w-full md:w-3/4 mx-auto text-[#494949] font-medium">The barn house captivates with its blend of rustic
+            <h1 class="mt-6 text-3xl lg:text-6xl font-extrabold">A barn house of this design has a striking appearance
+            </h1>
+            <p class="mt-6 w-full md:w-3/4 mx-auto body-text font-medium">The barn house captivates with its blend
+                of rustic
                 charm and modern sophistication, featuring weathered
                 wood, sleek metal accents, and large windows that flood the space with natural light.</p>
             <button
@@ -187,7 +200,56 @@
     </header>
     <main>
         <!-- about us  -->
-        <section class="mt-8 lg:mt-24"></section>
+        <section class="mt-8 lg:mt-24 relative bg-[#F4F4F4] py-8 lg:py-24">
+            <div class="container mx-auto ">
+                <img src="./assets/Vector.png" alt="" class="absolute  top-8 left-[2%]  hidden lg:block">
+            </div>
+            <div class="container mx-auto relative px-8 lg:px-0">
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 items-center lg:gap-10">
+                    <div class=" text-center lg:text-start">
+                        <h4 class="inline bg-white rounded-full px-4 py-2 mt-4 body-text font-bold">
+                            <i class="fa-solid fa-arrow-right mr-2" style="color: #494949;"></i> About Us
+                        </h4>
+                        <h1 class="font-extrabold text-2xl md:text-5xl title-text mt-4">We design thoughtful, liveable spaces</h1>
+                        <p class="font-medium body-text mt-6">The barn house captivates with its blend of rustic charm
+                            and
+                            modern sophistication, featuring weathered wood, sleek metal accents.</p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4">
+                            <div class="grid grid-cols-4 gap-8 items-center bg-base-100 px-2 py-6 mt-6">
+                                <div class="col-span-1 flex justify-end items-center">
+                                    <img src="./assets/commercial.png" alt="Building" class="max-w-full h-auto" />
+                                </div>
+                                <div class="col-span-3 w-full md:w-3/4  text-start">
+                                    <h2 class="mb-3 body-text font-extrabold text-base md:text-2xl">Commercial</h2>
+                                    <p class="font-medium text-[#737373]">Discover prime commercial spaces with modern amenities, strategic locations, and
+                                        flexible layouts for your business needs.</p>
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-4 gap-8 items-center bg-base-100 px-2 py-6 mt-6">
+                                <div class="col-span-1 flex justify-end items-center">
+                                    <img src="./assets/residential.png" alt="Building" class="max-w-full h-auto" />
+                                </div>
+                                <div class="col-span-3 w-full md:w-3/4 text-start">
+                                    <h2 class="mb-3 body-text font-extrabold text-base md:text-2xl">Residential</h2>
+                                    <p class="font-medium text-[#737373]">Find your perfect home in our well-designed residential buildings, offering
+                                        comfort,
+                                        modern amenities, and prime locations.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="rounded-lg mt-10 md:mt-4 mx-auto">
+                        <img src="./assets/Rectangle.png" alt="" class="h-auto max-w-full">
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </main>
     <footer></footer>
 </body>
