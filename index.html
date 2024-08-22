@@ -31,18 +31,15 @@
 
 </head>
 
-<body class="font-manrope">
+<body class="font-manrope scroll-smooth">
     <header class="container mx-auto">
 
 
         <!-- navbar  -->
-        <div class="navbar mt-12">
+        <div class="navbar mt-5 lg:mt-12">
             <div class="navbar-start">
-
-                <a class="btn btn-ghost text-xl">
-
+                <a class="btn btn-ghost text-xl" href="#home">
                     <!-- rotated arrow svg from figma file -->
-
                     <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.0106201" y="0.0522461" width="32" height="32" rx="16"
                             transform="rotate(0.019056 0.0106201 0.0522461)" fill="#ABEF5F" />
@@ -53,21 +50,36 @@
                             stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
 
-                    <span class=" text-3xl font-extrabold">Rinterio</span></a>
+                    <span class=" text-3xl font-extrabold">Rinterio</span>
+                </a>
             </div>
+
+            <!-- desktop nav  -->
+
             <div class=" navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
-                    <li class="text-[#494949] font-extrabold"><a>Home</a></li>
-                    <li class="text-[#737373]"><a>Services</a>
+                    <li class="text-[#494949] font-extrabold">
+                        <a href="#home">Home</a>
                     </li>
-                    <li class="text-[#737373]"><a>Portfolio</a></li>
-                    <li class="text-[#737373]"><a>Blogs</a></li>
-                    <li class="text-[#737373]"><a>Contact Us</a></li>
+                    <li class="text-[#737373]">
+                        <a href="#services">Services</a>
+                    </li>
+                    <li class="text-[#737373]">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="text-[#737373]">
+                        <a href="#blogs">Blogs</a>
+                    </li>
+                    <li class="text-[#737373]">
+                        <a href="#contact">Contact Us</a>
+                    </li>
                 </ul>
             </div>
+
+
             <div class="navbar-end justify-end">
 
-                <!-- mobile nav  -->
+                <!-- mobile menu  -->
                 <div class="dropdown dropdown-end">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                         <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -80,15 +92,25 @@
                         </svg>
 
                     </div>
+
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li class="text-[#494949] font-extrabold"><a>Home</a></li>
-                        <li class="text-[#737373]"><a>Services</a>
+                        <li class="text-[#494949] font-extrabold">
+                            <a href="#home">Home</a>
                         </li>
-                        <li class="text-[#737373]"><a>Portfolio</a></li>
-                        <li class="text-[#737373]"><a>Blogs</a></li>
-                        <li class="text-[#737373]"><a>Contact Us</a></li>
-                        <li class="">
+                        <li class="text-[#737373]">
+                            <a href="#services">Services</a>
+                        </li>
+                        <li class="text-[#737373]">
+                            <a href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="text-[#737373]">
+                            <a href="#blogs">Blogs</a>
+                        </li>
+                        <li class="text-[#737373]">
+                            <a href="#contact">Contact Us</a>
+                        </li>
+                        <li>
                             <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #737373;"></i>
                             <i class="fa-solid fa-cart-shopping fa-xl" style="color: #737373;"></i>
                             <div class="flex justify-center items-center gap-2 bg-[#ABEF5F] px-1 py-3 rounded-full">
@@ -142,8 +164,31 @@
 
         <!-- banner  -->
 
+        <section id="home" class="w-5/6 mx-auto text-center flex flex-col justify-center items-center mt-10">
+            <img src="./assets/banner.png" alt="max-w-full h-auto">
+            <h1 class="mt-6 text-3xl lg:text-6xl font-extrabold">A barn house of this design has a striking appearance</h1>
+            <p class="mt-6 w-full md:w-3/4 mx-auto text-[#494949] font-medium">The barn house captivates with its blend of rustic
+                charm and modern sophistication, featuring weathered
+                wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            <button
+                class="mt-8 btn w-full sm:w-1/3 md:w-1/4 lg:2-1/5 xl:w-1/6 bg-[#D4F6AE] rounded-full flex justify-center items-center border-2 border-[#ABEF5F]">View
+                Details <span><svg width="32" height="33" viewBox="0 0 32 33" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.00531006" y="0.734131" width="32" height="32" rx="16"
+                            transform="rotate(0.019056 0.00531006 0.734131)" fill="#ABEF5F" />
+                        <path d="M21.0016 11.7412L9.99799 22.7375" stroke="#1C1C1C" stroke-width="1.5"
+                            stroke-linecap="round" />
+                        <path
+                            d="M15.0019 10.8708C15.0019 10.8708 20.6356 10.3978 21.4903 11.253C22.3449 12.1082 21.868 17.7416 21.868 17.7416"
+                            stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </span></button>
+        </section>
     </header>
-    <main></main>
+    <main>
+        <!-- about us  -->
+        <section class="mt-8 lg:mt-24"></section>
+    </main>
     <footer></footer>
 </body>
 
