@@ -6,16 +6,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio</title>
 
+    <!-- google font cdn  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+
     <!-- fontawesome cdn  -->
     <script src="https://kit.fontawesome.com/bc52fcb791.js" crossorigin="anonymous"></script>
+
+
 
     <!-- Daisy UI + tailwindcss CDN  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- custom styles  -->
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+
+
 </head>
 
-<body>
-    <header></header>
+<body class="font-manrope">
+    <header class="container mx-auto">
+
+
+        <!-- navbar  -->
+        <div class="navbar mt-12">
+            <div class="navbar-start">
+
+                <a class="btn btn-ghost text-xl">
+
+                    <!-- rotated arrow svg from figma file -->
+
+                    <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.0106201" y="0.0522461" width="32" height="32" rx="16"
+                            transform="rotate(0.019056 0.0106201 0.0522461)" fill="#ABEF5F" />
+                        <path d="M21.007 11.0593L10.0033 22.0557" stroke="#1C1C1C" stroke-width="1.5"
+                            stroke-linecap="round" />
+                        <path
+                            d="M15.0073 10.1887C15.0073 10.1887 20.6409 9.71565 21.4957 10.5708C22.3503 11.426 21.8734 17.0594 21.8734 17.0594"
+                            stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                    <span class=" text-3xl font-extrabold">Rinterio</span></a>
+            </div>
+            <div class=" navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li class="text-[#494949] font-extrabold"><a>Home</a></li>
+                    <li class="text-[#737373]"><a>Services</a>
+                    </li>
+                    <li class="text-[#737373]"><a>Portfolio</a></li>
+                    <li class="text-[#737373]"><a>Blogs</a></li>
+                    <li class="text-[#737373]"><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end justify-end">
+
+                <!-- mobile nav  -->
+                <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="1.49983" y="0.500166" width="47" height="47" rx="23.5"
+                                transform="rotate(0.019056 1.49983 0.500166)" fill="white" />
+                            <rect x="1.49983" y="0.500166" width="47" height="47" rx="23.5"
+                                transform="rotate(0.019056 1.49983 0.500166)" stroke="#E9E9E9" />
+                            <path d="M16.7421 18.7578H33.2421M16.7421 24.0078H33.2421M16.7421 29.2578H33.2421"
+                                stroke="#737373" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li class="text-[#494949] font-extrabold"><a>Home</a></li>
+                        <li class="text-[#737373]"><a>Services</a>
+                        </li>
+                        <li class="text-[#737373]"><a>Portfolio</a></li>
+                        <li class="text-[#737373]"><a>Blogs</a></li>
+                        <li class="text-[#737373]"><a>Contact Us</a></li>
+                        <li class="">
+                            <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #737373;"></i>
+                            <i class="fa-solid fa-cart-shopping fa-xl" style="color: #737373;"></i>
+                            <div class="flex justify-center items-center gap-2 bg-[#ABEF5F] px-1 py-3 rounded-full">
+                                <span class="font-extrabold">Book Consult</span>
+
+                                <svg width="20" height="20" viewBox="0 0 33 33" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.0146027" y="0.0957031" width="32" height="32" rx="16"
+                                        transform="rotate(0.019056 0.0146027 0.0957031)" fill="#1C1C1C" />
+                                    <path d="M21.0109 11.1028L10.0073 22.0991" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M15.0112 10.2321C15.0112 10.2321 20.6449 9.7591 21.4996 10.6143C22.3542 11.4695 21.8773 17.1029 21.8773 17.1029"
+                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- icon groups  -->
+                <div class="lg:flex justify-center items-center gap-10 hidden">
+                    <div
+                        class="rounded-full p-5 border border-[#E9E9E9] cursor-pointer hover:bg-[#e9e9e9] duration-300 ease-in-out">
+                        <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #737373;"></i>
+                    </div>
+                    <div
+                        class="rounded-full p-5 border border-[#E9E9E9] cursor-pointer hover:bg-[#e9e9e9] duration-300 ease-in-out">
+                        <i class="fa-solid fa-cart-shopping fa-xl" style="color: #737373;"></i>
+                    </div>
+                    <div class="flex justify-center items-center gap-2 bg-[#ABEF5F] px-5 py-3 rounded-full">
+                        <span class="lg:text-lg 2xl:text-xl font-extrabold">Book Consult</span>
+
+                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.0146027" y="0.0957031" width="32" height="32" rx="16"
+                                transform="rotate(0.019056 0.0146027 0.0957031)" fill="#1C1C1C" />
+                            <path d="M21.0109 11.1028L10.0073 22.0991" stroke="white" stroke-width="1.5"
+                                stroke-linecap="round" />
+                            <path
+                                d="M15.0112 10.2321C15.0112 10.2321 20.6449 9.7591 21.4996 10.6143C22.3542 11.4695 21.8773 17.1029 21.8773 17.1029"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- banner  -->
+
+    </header>
     <main></main>
     <footer></footer>
 </body>
